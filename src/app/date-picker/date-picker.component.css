@@ -1,0 +1,54 @@
+.dateranger {
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  /* border-right: 1px; */
+}
+.date-icon {
+  padding:10px;
+  border-left: 0px !important;
+  border: 1px solid #ced4da;
+  cursor:pointer;
+   border-top-right-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+}
+.custom-day {
+      text-align: center;
+      padding: 0.185rem 0.25rem;
+      display: inline-block;
+     margin-left: auto;
+     width: 32px;
+     height:32px;
+    }
+    .custom-day.focused {
+      background-color: #e6e6e6;
+    }
+    .custom-day.range, .custom-day:hover {
+      background-color: rgb(2, 117, 216);
+      color: white;
+    }
+    .custom-day.faded {
+      background-color: rgba(2, 117, 216, 0.5);
+    }
+  .Hidess {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+    display: relative;
+  }

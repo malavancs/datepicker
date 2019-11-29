@@ -1,0 +1,25 @@
+<div class="hidewalaa">
+  
+	<input  class="dateranger"  placeholder="31 Jun 1998 - 30 Jul 2019">
+	<span (click)="showDate()" class="date-icon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+	<hr>
+  <div class="Hidess" *ngIf="isShowDate">
+	<ngb-datepicker #dp (select)="onDateSelection($event)" [displayMonths]="2" [dayTemplate]="t">
+	</ngb-datepicker>
+
+	<ng-template #t let-date="date" let-focused="focused">
+		<span class="custom-day"
+        [class.focused]="focused"
+        [class.range]="isFrom(date) || isTo(date) || isInside(date) || isHovered(date)"
+        [class.faded]="isHovered(date) || isInside(date)"
+        (mouseenter)="hoveredDate = date"
+        (mouseleave)="hoveredDate = null">
+    {{ date.day }}
+  </span>
+	</ng-template>
+  </div>
+
+	<pre>From: {{ fromDate | json }} </pre>
+	<pre>To: {{ toDate | json }} </pre>
+
+</div>
